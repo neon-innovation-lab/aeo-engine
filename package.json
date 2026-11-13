@@ -1,0 +1,41 @@
+{
+  "name": "@neon-innovation-lab/aeo-engine",
+  "version": "1.0.0",
+  "description": "Enterprise AEO (Answer Engine Optimization) & AI Brand Citation Audit Engine",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "aeo-audit": "dist/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neon-innovation-lab/aeo-engine.git"
+  },
+  "homepage": "https://neoninnovationlab.com/tools/aeo-audit",
+  "bugs": {
+    "url": "https://github.com/neon-innovation-lab/aeo-engine/issues"
+  },
+  "scripts": {
+    "build": "tsc",
+    "audit": "node dist/cli.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.3"
+  },
+  "license": "Apache-2.0",
+  "author": "Neon Innovation Lab <hello@neoninnovationlab.com>",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
